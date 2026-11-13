@@ -1,7 +1,12 @@
 body {
-    background-color: #f3efe4;
+    background-color: #e2e2e2;
     font-family: 'Jost', sans-serif;
 }
+/*Agrega un padding al contenerdor de la navbar haciendo que se vea mejor y el texto mas centrado*/
+.container-fluid {
+    padding: 1rem;
+}
+/*Barra de navegacion superior */
 .barra-navegacion {
     position: sticky;
     top: 0;
@@ -9,69 +14,59 @@ body {
     z-index: 1000;
     background: #dad6cc;
 }
-.barra-navegacion .logo-marca {
+/*Logo de la marca, ordena que en el logo de la barra de navegacion tenga estas caracteristicas*/
+.barra-navegacion .logo-marca{
+    color: #3b3b3b;
     font-family: 'Cormorant', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1.5rem;
+    text-decoration: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1050;
 }
-.barra-navegacion .navbar-collapse {
-    justify-content: center;
-}
+/*Define el espaciado entre cada opcion de la barra y define que la barra ocupe todo el ancho de la pantalla*/
 .barra-navegacion .navbar-nav {
     gap: 1.15rem;
-    align-items: flex-start;
     width: 100%;
 }
+/*Esta clase es la clase que modifica a los links, las opciones presnetes en la barra. Define color, tamaño de fuente, el "peso" y la transicion*/
 .barra-navegacion .nav-link {
     color: #3b3b3b;
     font-size: 0.85rem;
     font-weight: bold;
     transition: color 0.2s ease, text-shadow 0.2s ease;
 }
-.barra-navegacion .nav-link:hover,
-.barra-navegacion .nav-link.active {
+/*Aca se define que pasa cuando se para sobre la opcion del menu*/
+.barra-navegacion .nav-link:hover {
     color: #3b3b3b;
     text-shadow: 0 0 10px #3b3b3b;
 }
+/*Menu hamburguesa, se define el color del borde*/
 .barra-navegacion .navbar-toggler {
     border-color: #3b3b3b;
 }
-.barra-navegacion .navbar-toggler-icon {
-    filter: hue-rotate(80deg) brightness(1.5);
-}
-
-.logo-brand {
-    text-decoration: none;
-    color: #3b3b3b;
-    cursor: pointer;
-}
-.logo-brand:hover {
-    text-decoration: none;
-}
-.container-fluid {
-    padding: 1rem;
-    text-align: left;
-}
-.main-content {
+/*Estilos del banner principal*/
+/*Define la posicion y extension de la clase banner en si*/
+.banner {
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.main-content img {
+/*Define las caracteristicas de la imagen del banner*/
+.banner img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 4rem); /*Es una funcion agregada de CSS que permite calcular tamaños con distintas unidades, en este caso calcua el 100% del alto de dispositivo y se le resta una medida fija esto se hace para que al entrar cargue la image desde donde termina la barra de navegacion hasta el borde inferior del dispositivo*/
     object-fit: cover;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     filter: brightness(0.8);
 }
-.main-content h1 {
+.banner h1 {
     font-family: 'Cormorant', sans-serif;
     position: absolute;
     top: 50%;
@@ -81,19 +76,6 @@ body {
     color: #ffffff;
     text-align: center;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-}
-@media (max-width: 768px) {
-    .main-content {
-        min-height: auto;
-    }
-
-    .main-content h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-}
-.content-section {
-    padding: 3.25rem 1.5rem;
 }
 
 .content-section h2 {
