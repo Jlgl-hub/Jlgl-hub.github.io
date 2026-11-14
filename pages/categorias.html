@@ -33,12 +33,49 @@
     </nav>
     <section class="seccion-productos" id="productos">
         <h1>Nuestras Categorias</h1>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <h2>Descubre más acerca de todos nuestros productos</h2>
         <div class="cuadricula-productos">
             <!--La etiqueta article representa un elemento independiente y reutilizable en la página, si llevas eso a otra pagina funcionaria igual-->
             <article class="tarjeta-producto">
                 <a href="../pages/femeninos.html">
-                    <img src="assets/ForHer.webp" alt="For Her">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Femeninos</h3>
                         <p>Perfumes para ellas</p>
@@ -47,7 +84,23 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/masculinos.html">
-                    <img src="assets/Granada.webp" alt="Granada">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Masculinos</h3>
                         <p>Perfumes para ellos</p>
@@ -56,16 +109,62 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/arabes.html">
-                    <img src="assets/Granada.webp" alt="Granada">
-                    <div class="info-producto">
-                        <h3>Arabes</h3>
-                        <p>Perfumes con aroma oriental</p>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/abu_dabi.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/al_hamra.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/doha.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/dubai.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/jeddah.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/marrakech.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/sahara.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/shali.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../assets/img/arabes/zayed.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                        </div>
+                        <div class="info-producto">
+                            <h3>Arabes</h3>
+                            <p>Perfumes con aroma oriental</p>
+                        </div>
                     </div>
                 </a>
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/replicas.html">
-                    <img src="assets/Brujas.webp" alt="Brujas">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Replicas</h3>
                         <p>Tus olores favoritos más baratos</p>
@@ -74,7 +173,23 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/cremas.html">
-                    <img src="assets/Brujas.webp" alt="Brujas">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Cremas</h3>
                         <p>Cremas que te hidratan</p>
@@ -83,7 +198,58 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/aromatizantes.html">
-                    <img src="assets/Brujas.webp" alt="Brujas">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/bosque_lahuen.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/difusor_duraznoylimon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/buenos_deseos.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/difusor_duraznoylimon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/difusor_orquideayjazmin.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/durazno_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/higo_oriente.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/nag_champa.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/sahara_aromatizante.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/textil_amrglam.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/textil_amrmen.webp" class="d-block w-100" alt="categoria aromatizantes">
+                            </div>
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Aromatizantes</h3>
                         <p>Aromatizan el ambiente, y tu ropa</p>
@@ -92,7 +258,23 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/skincare.html">
-                    <img src="assets/Brujas.webp" alt="Brujas">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Skincare</h3>
                         <p>Cremas para el cuidado de la piel</p>
@@ -101,7 +283,23 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/maquillajes.html">
-                    <img src="assets/Brujas.webp" alt="Brujas">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Maquillajes</h3>
                         <p>Productos de belleza</p>
@@ -110,7 +308,23 @@
             </article>
             <article class="tarjeta-producto">
                 <a href="../pages/esmaltes.html">
-                    <img src="assets/Brujas.webp" alt="Brujas">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_argan.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lavanda.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_limon.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_lino.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/aromatizantes/aceite_menta.webp" class="d-block w-100" alt="categoria aromatizantes">
+                        </div>
+                    </div>
                     <div class="info-producto">
                         <h3>Esmaltes</h3>
                         <p>Color para tus uñas</p>
