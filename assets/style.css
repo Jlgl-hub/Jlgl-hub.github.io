@@ -2,6 +2,18 @@ body {
     background-color: #f3efe4; /*Defino el color de fondo base para todo el body de la pagina*/
     font-family: 'Jost', sans-serif; /*Como letra base va a usar Jost para todo lo que no este definido con su propia fuente*/
 }
+h1 {
+    text-align: center;
+    margin-bottom: 2rem; /*Separa las cajas de contenido del titulo*/
+    color: #3b3b3b;
+    font-family: 'Cormorant', sans-serif;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 2rem; /*Separa las cajas de contenido del titulo*/
+    color: #3b3b3b;
+    font-family: 'Cormorant', sans-serif;
+}
 /*Agrega un padding al contenerdor de la navbar haciendo que se vea mejor y el texto mas centrado*/
 .container-fluid {
     padding: 1rem; /*Crea un espacio de separacion entre el elemento y su propio borde*/
@@ -148,6 +160,7 @@ body {
     flex: 1; /*Causa que los contenedores de información se expandan para llenar el espacio disponible haceindo que sean todos iguales*/
 }
 /*Este fragmento modifica el diseño del título dentro de cada tarjeta de producto*/
+.product-info h3,
 .product-info h4 {
     margin: 0 0 0.5rem; /*Agrega un espacio de separación entre el título y el contenido siguiente pero no en los costados*/
     color: #3b3b3b; /*Define el color del texto del título*/
