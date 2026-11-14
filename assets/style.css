@@ -1,163 +1,201 @@
 body {
-    background-color: #e2e2e2;
-    font-family: 'Jost', sans-serif;
+    background-color: #f3efe4; /*Defino el color de fondo base para todo el body de la pagina*/
+    font-family: 'Jost', sans-serif; /*Como letra base va a usar Jost para todo lo que no este definido con su propia fuente*/
 }
 /*Agrega un padding al contenerdor de la navbar haciendo que se vea mejor y el texto mas centrado*/
 .container-fluid {
-    padding: 1rem;
+    padding: 1rem; /*Crea un espacio de separacion entre el elemento y su propio borde*/
 }
 /*Barra de navegacion superior */
 .barra-navegacion {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background: #dad6cc;
+    position: sticky; /*Hace que la barra de navegacion se quede fija en la parte superior de la pantalla cuando se hace scroll*/
+    top: 0; /*Se usa en conjunto con position: sticky para dejar fija la barra en la parte superior, indica que entre la barra y el contenido no hay espacio*/
+    width: 100%; /*Define que la barra ocupe todo el ancho de la pantalla*/
+    z-index: 1000; /*Mueve la barra por encima de otros elementos evitando superposicion*/
+    background: #dad6cc; /*Cambia el color de fondo de la barra de navegacion para evitar confusiones y que resalte sobre el resto*/
 }
 /*Logo de la marca, ordena que en el logo de la barra de navegacion tenga estas caracteristicas*/
 .barra-navegacion .logo-marca{
-    color: #3b3b3b;
-    font-family: 'Cormorant', sans-serif;
-    font-size: 1.5rem;
-    text-decoration: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    z-index: 1050;
+    color: #3b3b3b; /*Define el color del texto del logo*/
+    font-family: 'Cormorant', sans-serif; /*Se redefine con la caracteristica del cascading la fuente de la letra*/
+    font-size: 1.5rem; /*Se define el tamaño de la fuente usando rem para que en todo las pantallas tenga la misma apariencia*/
+    text-decoration: none; /*Al ser un link posee texto azul y subrayado, esto lo desactiva*/
+    position: relative; /*Se define la posicion relativa para poder usar el transform y centrar el logo en la barra de navegacion*/
+    left: 50%; /*Se define su posicion al 50% del ancho de la pantalla desde la izquierda*/
+    transform: translateX(-50%); /*Se usa transform ya que al usar de referencia el punto inferior izquierdo causa que se vea descentrado, esto arregla eso moviendo el logo al medio de su contenedor quedando centrado en la barra*/
+    cursor: pointer; /*Cambia el cursor al pasar sobre el logo*/
+    z-index: 1050; /*Sobrepone el logo sobre otros elementos incluido la navbar*/
 }
 /*Define el espaciado entre cada opcion de la barra y define que la barra ocupe todo el ancho de la pantalla*/
 .barra-navegacion .navbar-nav {
-    gap: 1.15rem;
-    width: 100%;
+    gap: 1.15rem; /*Define el espacio entre cada opcion de la barra de navegacion*/
+    width: 100%; /*Indica que se estire a lo ancho de su contenedor que es mas pequeño que el de la navbar*/
 }
-/*Esta clase es la clase que modifica a los links, las opciones presnetes en la barra. Define color, tamaño de fuente, el "peso" y la transicion*/
+/*Esta clase es la clase que modifica a los links, las opciones presentes en la barra. Define color, tamaño de fuente, el "peso" y la transicion*/
 .barra-navegacion .nav-link {
-    color: #3b3b3b;
-    font-size: 0.85rem;
-    font-weight: bold;
-    transition: color 0.2s ease, text-shadow 0.2s ease;
+    color: #3b3b3b; /*Define el color*/
+    font-size: 0.85rem; /*Define el tamaño de la fuente*/
+    font-weight: bold; /*Define el peso de la fuente, en este caso bold es negrita*/
+    transition: color 0.2s ease, text-shadow 0.2s ease; /*Se define la transicion para el cambio de color y sombra del texto al posicionarse encima del mismo. Se usa en conjunto con el hover*/
 }
 /*Aca se define que pasa cuando se para sobre la opcion del menu*/
-.barra-navegacion .nav-link:hover {
-    color: #3b3b3b;
-    text-shadow: 0 0 10px #3b3b3b;
+.barra-navegacion .nav-link:hover { /*Si el :hover tuviera un espacio afectaria a cada opcion por separado en vez de como un conjunto en caso de tener imagenes o algun otro elemento*/
+    color: #3b3b3b; /*Define el color del texto al pasar el mouse sobre ella*/
+    text-shadow: 0 0 10px #3b3b3b; /*Indica que pasa cuando se posa sobre ese boton, en este caso genera una sombra alrededor del texto*/
 }
 /*Menu hamburguesa, se define el color del borde*/
 .barra-navegacion .navbar-toggler {
-    border-color: #3b3b3b;
+    border-color: #3b3b3b; /*Define el color del borde*/
 }
 /*Estilos del banner principal*/
 /*Define la posicion y extension de la clase banner en si*/
 .banner {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    position: relative; /*Se define la posicion relativa para poder usar el transform y centrar el contenido del banner*/
+    width: 100%; /*Define que ocupe todo el ancho de la pantalla*/
+    margin: 0; /*Define que no tenga margen, es decir, que no tenga espacio entre el borde de la pantalla y el banner*/
+    padding: 0; /*Define que no tenga padding, es decir, que no tenga espacio entre el borde del banner y su contenido*/
+    overflow: hidden; /*Evita que el contenido del banner se desborde de su contenedor, esto es util para que las imagenes no sobresalgan del banner*/
 }
 /*Define las caracteristicas de la imagen del banner*/
 .banner img {
-    display: block;
-    width: 100%;
-    height: auto;
+    display: block; /*Hace que la imagen se comporte como un bloque, es decir, que ocupe todo el ancho disponible y que no tenga espacio entre ella y otros elementos*/
+    width: 100%; /*Define que ocupe todo el ancho de su contenedor*/
+    height: auto; /*Define que la altura de la imagen se ajuste automaticamente al ancho de la misma, manteniendo la relacion de aspecto*/
     max-height: calc(100vh - 4rem); /*Es una funcion agregada de CSS que permite calcular tamaños con distintas unidades, en este caso calcua el 100% del alto de dispositivo y se le resta una medida fija esto se hace para que al entrar cargue la image desde donde termina la barra de navegacion hasta el borde inferior del dispositivo*/
-    object-fit: cover;
+    object-fit: cover; /*Le ordena al objeto que cubra el espacio disponible sin distorsionarse*/
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-    filter: brightness(0.8);
+    filter: brightness(0.8); /*Reduce el brillo de la imagen para que las letras blancas sean legibles*/
 }
 .banner h1 {
-    font-family: 'Cormorant', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    font-family: 'Cormorant', sans-serif; /*Define la fuente de la letra del texto importada de Google Fonts*/
+    position: absolute; /*Se define una posicon absoluta asi el texto se posiciona sobre la imagen del banner y no se ve afectado por el flujo normal del documento*/
+    top: 50%; /*Se centra verticalmente*/
+    left: 50%; /*Se centra horizontalmente*/
+    transform: translate(-50%, -50%); /*Al tomar como referencia el punto inferior izquierdo se desplaza la mitad de su ancho y altura para que quede centrado*/
+    z-index: 2; /*Se define un z-index mayor al de la imagen para que el texto se vea por encima de la misma*/
+    color: #ffffff; /*Define el color del texto*/
+    text-align: center; /*Define que el texto se alinee al centro*/
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /*Agrega una sombra al texto para mejorar la legibilidad sobre la imagen*/
 }
-
-.content-section h2 {
+/*Estilos de la seccion de contenidos */
+/*Este fragmento modifica la etiqueta h2 de la clase contenido */
+.seccion-sobre-nosotros h2 {
+    text-align: center; /*Alinea el texto al centro*/
+    margin-bottom: 0.75rem; /*Toma un margen que separa lo que va abajo para darle espacio*/
+    color: #3b3b3b; /*Selecciona el color del texto*/
+    font-family: 'Cormorant', sans-serif; /*La fuente de la letra del texto importada de Google Fonts*/
+    margin-top: 2rem; /*Toma un margen que separa lo que va arriba para darle espacio*/
+}
+.seccion-sobre-nosotros p {
+    text-align: center; /*Alinea el texto al centro*/
+    margin: 0 auto 1.5rem; /*Toma un margen que separa lo que va abajo para darle espacio*/
+    color: #555; /*Selecciona el color del texto*/
+    font-size: 1.25rem; /*Define el tamaño de la letra*/
+    line-height: 1.6; /*Define la altura de la linea, es decir, el espacio entre cada linea de texto*/
+    max-width: 75%; /*Define un ancho maximo para que no se vea tan largo el texto y sea mas facil de leer. Sin esto el auto del margin no funcionaria correctamente, ya uqe lo que hace el auto es que extiende maregenes laterales para que el texto quede centrado y para eso debe tener un ancho definido*/
+}
+/*Desde aca hasta modifica la seccion de productos, tanto las tarjetas como la fuente de las letras*/
+.seccion-productos {
+    padding: 3rem 1.5rem; /*Crea una separacion entre el contenido y su propia caja de contenido. El primer valor aplica ese padding arriba y abajo, el otro en izquierda y derecho*/
+}
+/*Cambia el estilo del h2 de la seccion de productos*/
+.seccion-productos h2 {
     text-align: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 2rem; /*Separa las cajas de contenido del titulo*/
     color: #3b3b3b;
     font-family: 'Cormorant', sans-serif;
 }
+/*Este fragmento modifica el diseño de la cuadrícula de productos*/
+.cuadricula-productos {
+    display: grid; /*Convierte el contenedor en una cuadrícula con filas y columnas*/
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /*Crea una cuadricula responsive que se adapta a la pantalla. El repeat indica que debe repetir este patron por cada columna, sin tener que escribir manualmente cada una. Auto-fit ajusta el numero de columans segun el ancho de la pantalla evitando que alguna no se dibuje o quede por la mitad. Minmax respresenta el minimo tamaño que debe tomar cada columna. Y fr significa el tamaño minimo, fr es fraccion unit que representa una faccion del espacio disponible en el contenedor, evitando desbordamientos*/
+    gap: 1.5rem; /*Actua como un margen entre las cajas de productos*/
+    max-width: 1200px; /*Setea un estiramiento maximo de 1200px, esto evita que al achicar la pantalla la estructura se desborde y rompa la estetica, pero a la vez, si alcanza ese ancho se detiene*/
+    margin: 0 auto; /*Cuando supera los 1200px se detiene ahi y esto hace que el contenido quede centrado poniendo que no tenga margenes arriba y abajo y que se adapte al medio con el auto*/
+    align-items: stretch; /*Define que las cajas ocupen todo el espacio disponible verticalmente cuando no hay una verticalidad definida*/
+}
+.tarjeta-producto {
+    background: #dfdbd0; /*Define el color de fondo de las tarjetas de producto*/
+    border-radius: 16px; /*Define el redondeo de las esquinas de las tarjetas de producto*/
+    overflow: hidden; /*Evita que el contenido de la tarjeta se desborde de su contenedor, esto es util para que las imagenes no sobresalgan de la tarjeta*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /*Define la sombra de la tarjeta, el primer valor es el desplazamiento horizontal, el segundo es el desplazamiento vertical y el tercero es el difuminado*/
 
-.products-section {
-    padding: 3rem 1.5rem;
-    background-color: #f3efe4;
-}
-
-.products-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #3b3b3b;
-    font-family: 'Cormorant', sans-serif;
-}
-.products-category {
-    margin-bottom: 2.5rem;
-}
-
-.products-category h3 {
-    text-align: center;
-    margin: 0 auto 1rem;
-    color: #3b3b3b;
-    font-family: 'Jost', sans-serif;
-    font-size: 1.5rem;
-}
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: stretch;
+    display: flex; /*Convierte la tarjeta en un contenedor flexible, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
+    flex-direction: column; /*Define que los elementos hijos se acomoden en una columna, es decir, uno debajo del otro*/
+    height: 100%; /*Hace que la tarjeta ocupe todo el alto disponible en su contenedor, esto es util para que todas las tarjetas tengan la misma altura y se vean uniformes*/
 }
 
-.product-card {
-    background: #dfdbd0;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.tarjeta-producto:hover { /*Si el :hover va con espacio entonces no afecta a toda la tarejta si no a cada hijo de la tarjeta*/
+    transform: translateY(-5px); /*Se traslada 5px hacia arriba para hacer notar que se esta interactuando con ella*/
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12); /*Crea una sombra para darle un efecto de elevación*/
+}
+/*Este fragmento modifica el diseño de la imagen dentro de cada tarjeta de producto*/
+.tarjeta-producto img {
+    width: 100%; /*Que ocupe todo el ancho disponible del contenedor*/
+    height: 240px; /*Define una altura fija para que todas las imagenes tengan la misma altura y se vean uniformes*/
+    object-fit: cover; /*Hace que la imagen se ajuste al contenedor sin distorsionarse, recortando lo que sobre si es necesario*/
+    display: block; /*Hace que la imagen se comporte como un bloque, es decir, que ocupe todo el ancho disponible y que no tenga espacio entre ella y otros elementos*/
+}
+/*Este fragmento modifica el diseño de la información dentro de cada tarjeta de producto*/
+.info-producto {
+    padding: 1rem; /*Crea un espacio de separacion entre el contenido y su propio borde*/
+    display: flex; /*Convierte el contenedor en un contenedor flexible, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
+    flex-direction: column; /*Define que los elementos hijos se acomoden en una columna, es decir, uno debajo del otro*/
+    justify-content: flex-start; /*Alinea los elementos hijos al inicio del contenedor, es decir, hacia arriba*/
+    flex: 1; /*Causa que los contenedores de información se expandan para llenar el espacio disponible haceindo que sean todos iguales*/
+}
+/*Este fragmento modifica el diseño del título dentro de cada tarjeta de producto*/
+.product-info h4 {
+    margin: 0 0 0.5rem; /*Agrega un espacio de separación entre el título y el contenido siguiente pero no en los costados*/
+    color: #3b3b3b; /*Define el color del texto del título*/
+    font-size: 1.1rem; /*Define el tamaño de la fuente del título*/
+}
+/*Este fragmento modifica el diseño de la descripción dentro de cada tarjeta de producto*/
+.info-producto p {
+    margin: 0; /*Elimina el margen por defecto del párrafo*/
+    color: #555; /*Define el color del texto de la descripción*/
+    font-size: 0.95rem; /*Define el tamaño de la fuente de la descripción*/
+    line-height: 1.5; /*Define la altura de la línea, es decir, el espacio entre cada línea de texto de la descripción en caso de que ocupe mas de una línea*/
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-}
+.tarjeta-mas-info {
+    background: #dfdbd0; /*Define el color de fondo de las tarjetas de producto*/
+    border-radius: 16px; /*Define el redondeo de las esquinas de las tarjetas de producto*/
+    overflow: hidden; /*Evita que el contenido de la tarjeta se desborde de su contenedor, esto es util para que las imagenes no sobresalgan de la tarjeta*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /*Define la sombra de la tarjeta, el primer valor es el desplazamiento horizontal, el segundo es el desplazamiento vertical y el tercero es el difuminado*/
 
-.product-card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    display: block;
+    display: flex; /*Convierte la tarjeta en un contenedor flexible, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
+    flex-direction: column; /*Define que los elementos hijos se acomoden en una columna, es decir, uno debajo del otro*/
+    align-items: center; /*Alinea el texto al centro*/
+    justify-content: center; /*Alinea el contenido al centro*/
+    text-align: center; /*Alinea el texto al centro*/
+    height: 100%; /*Hace que la tarjeta ocupe todo el alto disponible en su contenedor, esto es util para que todas las tarjetas tengan la misma altura y se vean uniformes*/
 }
-
-.product-info {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
+.tarjeta-mas-info:hover { /*Si el :hover va con espacio entonces no afecta a toda la tarejta si no a cada hijo de la tarjeta*/
+    transform: translateY(-5px); /*Se traslada 5px hacia arriba para hacer notar que se esta interactuando con ella*/
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12); /*Crea una sombra para darle un efecto de elevación*/
 }
-
-.product-info h3 {
-    margin: 0 0 0.5rem;
-    color: #3b3b3b;
-    font-size: 1.1rem;
+.texto-mas-info h4 {
+    
+    color: #3b3b3b; /*Define el color del texto del título*/
+    font-size: 2rem; /*Define el tamaño de la fuente del título*/
 }
-
-.product-info p {
-    margin: 0;
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.5;
+/*Este fragmento modifica el diseño de la descripción dentro de cada tarjeta de producto*/
+.texto-mas-info p {
+    margin: 0; /*Elimina el margen por defecto del párrafo*/
+    color: #555; /*Define el color del texto de la descripción*/
+    font-size: 1.25rem; /*Define el tamaño de la fuente de la descripción*/
+    line-height: 1.5; /*Define la altura de la línea, es decir, el espacio entre cada línea de texto de la descripción en caso de que ocupe mas de una línea*/
+}
+.texto-mas-info .boton-mas {
+    display: inline-block; /*Hace que el botón se comporte como un bloque en línea, es decir, que ocupe solo el espacio necesario y que pueda estar al lado de otros elementos*/
+    padding: 0.5rem 1rem; /*Crea un espacio de separacion entre el contenido y su propio borde, el primer valor aplica arriba y abajo, el otro en izquierda y derecho*/
+    background-color: #3b3b3b; /*Define el color de fondo del botón*/
+    color: #ffffff; /*Define el color del texto del botón*/
+    border-radius: 8px; /*Define el redondeo de las esquinas del botón*/
+    text-decoration: none; /*Elimina el subrayado del texto del botón*/
+    transition: background-color 0.2s ease, transform 0.2s ease; /*Define la transición para los cambios de color de fondo y transformación al pasar el mouse sobre el botón*/
+    margin-top: 1rem; /*Crea un espacio de separacion entre el botón y el contenido superior*/
 }
 .redes-sociales {
     list-style: none;

@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="#sobre-nosotros">Sobre Nosotros</a>
-                        <a class="nav-link" href="#productos">Productos Destacados</a>
+                        <a class="nav-link" href="#productos">Nuestras Categorias</a>
                         <a class="nav-link" href="#contactanos">Contactanos</a>
                     </div>
                 </div>
@@ -42,138 +42,34 @@
     </section>
     <!--Contenido sobre nosotros-->
     <!--Section sirve para agrupar contenido relacionado con un mismo tema, es una etiqueta semántica-->
-    <section class="content-section" id="sobre-nosotros">
+    <section class="seccion-sobre-nosotros" id="sobre-nosotros"> <!--Le asignamos la clase y el id para usar en la barra de navegacion-->
         <h2>Sobre nosotros.</h2>
         <p>Somos Pato y Mezzo, estudiantes del Huergo. Con las ganas de emprender decidimos abrir P&M, una empresa que represente lo que somos. Actualmente vendemos perfumes y aromatizantes de Bagués, perfumes ricos y duraderos, así como baratos. Si bien al principio puedas dudar de su calidad, no hay por qué, según nuestros clientes son ricos y duraderos.<br>Mirá nuestro catálogo, confiá en nosotros y juntos formemos una gran comunidad.</p>
     </section>
-    <section class="products-section" id="productos">
-        <h2>Productos Destacados</h2>
-        <div class="products-category">
-            <h3>Perfumes Femeninos</h3>
-            <div class="products-grid">
-                <article class="product-card">
+    <!--Iniciamos otra seccion para un nuevo tema: los productos-->
+    <section class="seccion-productos" id="productos">
+        <h2>Nuestras Categorias</h2>
+            <div class="cuadricula-productos">
+                <!--La etiqueta article representa un elemento independiente y reutilizable en la página, si llevas eso a otra pagina funcionaria igual-->
+                <article class="tarjeta-producto">
                     <img src="assets/ForHer.webp" alt="For Her">
-                    <div class="product-info">
-                        <h4>For Her</h4>
-                        <p>Fragancia similar al Good Girl Blush</p>
+                    <div class="info-producto">
+                        <h4>Femeninos</h4>
+                        <p>Perfumes para ellas</p>
                     </div>
                 </article>
-                <article class="product-card">
+                <article class="tarjeta-producto">
                     <img src="assets/Granada.webp" alt="Granada">
-                    <div class="product-info">
-                        <h4>Granada</h4>
-                        <p>Fragancia similar al Bombshell</p>
+                    <div class="info-producto">
+                        <h4>Masculinos</h4>
+                        <p>Perfumes para ellos</p>
                     </div>
                 </article>
-                <article class="product-card">
-                    <img src="assets/Brujas.webp" alt="Brujas">
-                    <div class="product-info">
-                        <h4>Brujas</h4>
-                        <p>Fragancia similar al Halloween</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="products-category">
-            <h3>Perfumes Masculinos</h3>
-            <div class="products-grid">
-                <article class="product-card">
-                    <img src="assets/ForHim.webp" alt="For Him">
-                    <div class="product-info">
-                        <h4>For Him</h4>
-                        <p>Fragancia similar al Bad Boy Cobalt.</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/Amalfi.webp" alt="Amalfi Profondo">
-                    <div class="product-info">
-                        <h4>Amalfi Profondo</h4>
-                        <p>Fragancia similar al Acqua di Giò Profondo.</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/Amsterdam.webp" alt="Amsterdam Homme">
-                    <div class="product-info">
-                        <h4>Amsterdam Homme</h4>
-                        <p>Fragancia similar al Pure XS.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="products-category">
-            <h3>Perfumes Arabes</h3>
-            <div class="products-grid">
-                <article class="product-card">
-                    <img src="assets/Jeddah.webp" alt="Jeddah">
-                    <div class="product-info">
-                        <h4>Jeddah</h4>
-                        <p>Fragancia similar al 9PM.</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/AlHamra.webp" alt="Al Hamra">
-                    <div class="product-info">
-                        <h4>Al Hamra</h4>
-                        <p>Fragancia similar al Angels' Share.</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/Marrakech.jpeg" alt="Marrakech">
-                    <div class="product-info">
-                        <h4>Marrakech</h4>
-                        <p>Fragancia similar al Erba Pura.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="products-category">
-            <h3>Aromatizantes</h3>
-            <div class="products-grid">
-                <article class="product-card">
-                    <img src="assets/MangoYMaracuya.png" alt="Mango y Maracuya">
-                    <div class="product-info">
-                        <h4>Mango y Maracuya</h4>
-                        <p>Dulzura jugosa y notas frutales exóticas.</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/TeVerdeYVerbena.png" alt="Té Verde y Verbena">
-                    <div class="product-info">
-                        <h4>Té Verde y Verbena</h4>
-                        <p>Herbal, fresco y revitalizante.</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/RosaYVioleta.png" alt="Rosa y Violeta">
-                    <div class="product-info">
-                        <h4>Rosa y Violeta</h4>
-                        <p>Floral delicado.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="products-category">
-            <h3>Cremas</h3>
-            <div class="products-grid">
-                <article class="product-card">
-                    <img src="assets/AntiAge.jpeg" alt="Crema Anti-Age">
-                    <div class="product-info">
-                        <h4>Crema Anti-Age</h4>
-                        <p>Con Golden Milk</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/Ordene.webp" alt="Crema de Ordeñe Semplice">
-                    <div class="product-info">
-                        <h4>Crema de Ordeñe Semplice</h4>
-                        <p>Con Vitamina E y Aloe Vera</p>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <img src="assets/Manos.jpg" alt="Crema para Manos Semplice">
-                    <div class="product-info">
-                        <h4>Crema para Manos Semplice</h4>
-                        <p>Variedad: Humectante / Antioxidante / Revitalizante</p>
+                <article class="tarjeta-mas-info">
+                    <div class="texto-mas-info">
+                        <h4>Ver Más</h4>
+                        <p>Conoce todas nuestras categorías</p>
+                        <a href="pages/categorias.html" class="boton-mas">Ver Más</a>
                     </div>
                 </article>
             </div>
