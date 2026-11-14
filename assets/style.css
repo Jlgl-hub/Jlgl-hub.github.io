@@ -119,7 +119,6 @@ body {
     border-radius: 16px; /*Define el redondeo de las esquinas de las tarjetas de producto*/
     overflow: hidden; /*Evita que el contenido de la tarjeta se desborde de su contenedor, esto es util para que las imagenes no sobresalgan de la tarjeta*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /*Define la sombra de la tarjeta, el primer valor es el desplazamiento horizontal, el segundo es el desplazamiento vertical y el tercero es el difuminado*/
-
     display: flex; /*Convierte la tarjeta en un contenedor flexible, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
     flex-direction: column; /*Define que los elementos hijos se acomoden en una columna, es decir, uno debajo del otro*/
     height: 100%; /*Hace que la tarjeta ocupe todo el alto disponible en su contenedor, esto es util para que todas las tarjetas tengan la misma altura y se vean uniformes*/
@@ -136,6 +135,10 @@ body {
     object-fit: cover; /*Hace que la imagen se ajuste al contenedor sin distorsionarse, recortando lo que sobre si es necesario*/
     display: block; /*Hace que la imagen se comporte como un bloque, es decir, que ocupe todo el ancho disponible y que no tenga espacio entre ella y otros elementos*/
 }
+.tarjeta-producto a {
+    text-decoration: none; /*Elimina el subrayado del texto del link*/
+    color: inherit; /*Hace que el color del texto del link herede el color de su contenedor, evitando que se vea azul y subrayado*/
+}
 /*Este fragmento modifica el diseño de la información dentro de cada tarjeta de producto*/
 .info-producto {
     padding: 1rem; /*Crea un espacio de separacion entre el contenido y su propio borde*/
@@ -149,6 +152,7 @@ body {
     margin: 0 0 0.5rem; /*Agrega un espacio de separación entre el título y el contenido siguiente pero no en los costados*/
     color: #3b3b3b; /*Define el color del texto del título*/
     font-size: 1.1rem; /*Define el tamaño de la fuente del título*/
+    
 }
 /*Este fragmento modifica el diseño de la descripción dentro de cada tarjeta de producto*/
 .info-producto p {
@@ -176,7 +180,6 @@ body {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12); /*Crea una sombra para darle un efecto de elevación*/
 }
 .texto-mas-info h4 {
-    
     color: #3b3b3b; /*Define el color del texto del título*/
     font-size: 2rem; /*Define el tamaño de la fuente del título*/
 }
@@ -195,7 +198,7 @@ body {
     border-radius: 8px; /*Define el redondeo de las esquinas del botón*/
     text-decoration: none; /*Elimina el subrayado del texto del botón*/
     transition: background-color 0.2s ease, transform 0.2s ease; /*Define la transición para los cambios de color de fondo y transformación al pasar el mouse sobre el botón*/
-    margin-top: 1rem; /*Crea un espacio de separacion entre el botón y el contenido superior*/
+    margin: 1rem; /*Crea un espacio de separacion entre el botón y el contenido superior*/
 }
 .redes-sociales {
     list-style: none;
