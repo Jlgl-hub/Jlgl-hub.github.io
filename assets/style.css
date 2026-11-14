@@ -90,6 +90,9 @@ h2 {
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /*Agrega una sombra al texto para mejorar la legibilidad sobre la imagen*/
 }
 /*Estilos de la seccion de contenidos */
+.seccion-sobre-nosotros {
+    padding: 4rem 1.5rem; /*Crea una separacion entre el contenido y su propia caja de contenido. El primer valor aplica ese padding arriba y abajo, el otro en izquierda y derecho*/
+}
 /*Este fragmento modifica la etiqueta h2 de la clase contenido */
 .seccion-sobre-nosotros h2 {
     text-align: center; /*Alinea el texto al centro*/
