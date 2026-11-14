@@ -10,7 +10,7 @@ h1 {
 }
 h2 {
     text-align: center;
-    margin-bottom: 2rem; /*Separa las cajas de contenido del titulo*/
+    margin: 2rem auto 4rem; /*Separa las cajas de contenido del titulo*/
     color: #3b3b3b;
     font-family: 'Cormorant', sans-serif;
 }
