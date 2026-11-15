@@ -270,3 +270,24 @@ h2 {
     font-size: 0.85rem; /*Define el tamaño de la fuente del texto del footer*/
     color: #3b3b3b; /*Define el color del texto del footer*/
 }
+.seccion-preguntas {
+    padding: 3rem 1.5rem; /*Crea una separacion entre el contenido y su propia caja de contenido. El primer valor aplica ese padding arriba y abajo, el otro en izquierda y derecho*/
+}
+/*Cambia el estilo del h2 de la seccion de productos*/
+.seccion-preguntas h2 {
+    text-align: center;
+    margin-bottom: 2rem; /*Separa las cajas de contenido del titulo*/
+    color: #3b3b3b;
+    font-family: 'Cormorant', sans-serif;
+}
+.item-pregunta {
+    background-color: #ede7d9;
+}
+.texto-pregunta {
+    font-family: 'Cormorant', sans-serif;
+    font-size: 1.5rem;
+}
+.info-pregunta {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+}
