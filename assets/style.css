@@ -265,10 +265,8 @@ h2 {
 }
 .contenido-footer {
     background-color: #dad6cc; /*Define el color de fondo del footer*/
-    padding: 2rem 1.5rem; /*Crea un espacio de separacion entre el contenido y su propio borde, el primer valor aplica arriba y abajo, el otro en izquierda y derecho*/
     padding: 1rem 1rem; /*Crea un espacio de separacion entre el contenido y su propio borde, el primer valor aplica arriba y abajo, el otro en izquierda y derecho*/
     font-family: 'Jost', sans-serif; /*Define la fuente de la letra del texto importada de Google Fonts*/
     font-size: 0.85rem; /*Define el tamaño de la fuente del texto del footer*/
     color: #3b3b3b; /*Define el color del texto del footer*/
-    margin-bottom: 5rem; /*Crea un espacio de separacion entre el contenido y su propio borde, en este caso abajo*/
 }
