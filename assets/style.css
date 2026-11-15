@@ -217,49 +217,58 @@ h2 {
     margin: 1rem; /*Crea un espacio de separacion entre el botón y el contenido superior*/
 }
 .redes-sociales {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 900px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    list-style: none; /*Elimina los puntos de la lista*/
+    padding: 0; /*Elimina el padding de la lista*/
+    margin: 0 auto; /*Elimina el margen de la lista y la centra horizontalmente*/
+    max-width: 900px; /*Define un ancho máximo para la lista, evitando que se vea demasiado ancha en pantallas grandes*/
+    width: 100%; /*Define que la lista ocupe todo el ancho disponible de su contenedor*/
+    display: flex; /*Convierte la lista en un contenedor flexible, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
+    flex-direction: column; /*Define que los elementos hijos se acomoden en una columna, es decir, uno debajo del otro*/
+    align-items: center; /*Alinea los elementos hijos al centro del contenedor*/
+    justify-content: center; /*Alinea los elementos hijos al centro del contenedor*/
+    gap: 1rem; /*Define un espacio de separación entre los elementos hijos*/
+    margin-bottom: 5rem; /*Crea un espacio de separacion entre el contenido y su propio borde, en este caso abajo*/
 }
 .redes-sociales-item {
-    width: 100%;
-    max-width: 520px;
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
+    width: 100%; /*Define que el elemento ocupe todo el ancho disponible de su contenedor*/
+    max-width: 520px; /*Define un ancho máximo para el elemento, evitando que se vea demasiado ancho en pantallas grandes*/
+    display: grid; /*Convierte el elemento en una cuadrícula, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
+    grid-template-columns: 70px 1fr; /*Define que la cuadrícula tenga dos columnas, la primera de 70px y la segunda que ocupe el resto del espacio disponible*/
+    align-items: center; /*Alinea los elementos hijos al centro de la cuadrícula*/
+    gap: 1rem; /*Define un espacio de separación entre los elementos hijos*/
 }
 .logo-red-social {
-    width: 64px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #dad6cc;
-    border-radius: 50%;
-    color: #3b3b3b;
-    font-size: 2rem;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 64px; /*Define el ancho del logo de la red social*/
+    height: 64px; /*Define la altura del logo de la red social*/
+    display: flex; /*Convierte el logo en un contenedor flexible, esto permite que los elementos hijos se acomoden de manera flexible y responsiva*/
+    align-items: center; /*Alinea los elementos hijos al centro del contenedor*/
+    justify-content: center; /*Alinea los elementos hijos al centro del contenedor*/
+    background: #dad6cc; /*Define el color de fondo del logo de la red social*/
+    border-radius: 50%; /*Define que el logo de la red social tenga forma circular*/
+    color: #3b3b3b; /*Define el color del icono de la red social*/
+    font-size: 2rem; /*Define el tamaño del icono de la red social*/
+    text-decoration: none; /*Elimina el subrayado del icono de la red social*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /*Define la transición para los cambios de transformación y sombra al pasar el mouse sobre el logo de la red social*/
 }
 .logo-red-social:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    transform: scale(1.08); /*Hace que el logo de la red social se agrande ligeramente al pasar el mouse sobre él*/
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1); /*Agrega una sombra al logo de la red social al pasar el mouse sobre él*/
 }
 .redes-sociales-item p {
-    margin: 0;
-    color: #3b3b3b;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    margin: 0; /*Elimina el margen por defecto del párrafo*/
+    padding: 0; /*Elimina el padding por defecto del párrafo*/
+    color: #3b3b3b; /*Define el color del texto de la red social*/
+    font-size: 1.25rem; /*Define el tamaño de la fuente del texto de la red social*/
+    line-height: 1.5; /*Define la altura de la línea, es decir, el espacio entre cada línea de texto de la red social en caso de que ocupe mas de una línea*/
+    text-align: center; /*Alinea el texto de la red social al centro*/
+    justify-content: center; /*Alinea los elementos hijos al centro del contenedor*/
+}
+.contenido-footer {
+    background-color: #dad6cc; /*Define el color de fondo del footer*/
+    padding: 2rem 1.5rem; /*Crea un espacio de separacion entre el contenido y su propio borde, el primer valor aplica arriba y abajo, el otro en izquierda y derecho*/
+    padding: 1rem 1rem; /*Crea un espacio de separacion entre el contenido y su propio borde, el primer valor aplica arriba y abajo, el otro en izquierda y derecho*/
+    font-family: 'Jost', sans-serif; /*Define la fuente de la letra del texto importada de Google Fonts*/
+    font-size: 0.85rem; /*Define el tamaño de la fuente del texto del footer*/
+    color: #3b3b3b; /*Define el color del texto del footer*/
+    margin-bottom: 5rem; /*Crea un espacio de separacion entre el contenido y su propio borde, en este caso abajo*/
 }
