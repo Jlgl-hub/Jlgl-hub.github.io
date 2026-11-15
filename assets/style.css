@@ -291,3 +291,33 @@ h2 {
     font-family: 'Jost', sans-serif;
     font-size: 0.75rem;
 }
+.link-form a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenedor-form {
+    width: 90%;          /* Ocupa casi toda la pantalla dejando un 5% de margen a cada lado */
+    margin: 2rem auto;   /* Lo centra horizontalmente de forma natural sin deformar el botón */
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-form textarea {
+    width: 100%;         /* Hace que el cuadro de texto se estire al 100% de .contenedor-form */
+    box-sizing: border-box; /* Evita que el padding haga que se pase de los bordes */
+}
+.form-pregunta .btn {
+    margin-left: 2rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;               /* Texto blanco */
+    background-color: #8c7a6b;    /* Tono crema/topo oscuro que combina con el fondo */
+    border: none;
+    border-radius: 25px;          /* Bordes bien redondeados (puedes usar 8px si lo prefieres menos píldora) */
+    padding: 0.6rem 2rem;         /* Tamaño cómodo del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-pregunta .btn:hover {
+    background-color: #706053;
+}
